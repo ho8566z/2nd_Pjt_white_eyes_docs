@@ -1,28 +1,63 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
-      "docs/s-001-start-spec": "3a53f54ae19c95da1fa024b1f7e5aa622d29c47b",
-      "main": "58518d45b91c3043530c56162990322dc78a4c03"
+      "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
+      "main": "2541231a06d3008be88f3ad24f5fc03ba7880f9d",
+      "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
+      "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
+      "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
+      "docs/yolo-crowd-sourcing": "f60dd60c8c963af45399289bf947aba3655f7f74",
+      "docs/fnc-id-in-code": "2743c0480bb8b81af154bf03a11edf6194f9822a",
+      "docs/package-structure-user-js": "1a2236d9f44481b3a9680173ce7e8164b05a292a",
+      "docs/camera-register-zone-not-found": "07ab8618234bf02c41d5f55a7e0e7f54547048b0",
+      "docs/visdrone-pointtracker": "d537f8f33f98b4130fcec4c8a718a41c8f0c3e4e"
     },
     "white-eyes-flask": {
-      "dev": "61205e3053bae62c8c1994f1e7637b67b83dd8dc",
-      "feature/1-cam-start": "e8d71294f910f43ec52028354cb6c2e45ef7bbe9",
-      "feature/2-cam-stop": "df5833155ffea4b1c636ac16694530c422cc039c",
-      "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8"
+      "dev": "6cf14f305abcf0c5fb9a4012e0efa9918c460bb0",
+      "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
+      "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
+      "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
+      "chore/internal-api-token": "da3b975a8f790751d946796d630d67967c9d2394",
+      "feature/4-edge-count": "fdecb0c28971de5a52e31633d8a9163873e4667c",
+      "chore/pr-template-fnc-id": "dec913503f6b67917257bf5fad875ec8e62c94fe",
+      "feature/5-dwell-time": "f2886a9a4e4788d079e627bc0e52f38a50b0d0bd",
+      "feature/3-person-detect": "aa6a28c86c7cc7473f1e5df4816a254640a7f85e",
+      "feature/6-dummy-prepare": "fde6951f4d4a12e456cd22a1dc54e6b08bfb9ae0",
+      "feature/7-dummy-playback": "5a6c2689292448bc93b06d1c0f8ec63cade21a88",
+      "feature/3-visdrone-pointtracker": "42746542c589738926faf9e7ff8447d4e10cf85d",
+      "feature/8-result-send": "7456f94f2bb57c8ffabe3101e659d5d22ae34bdf"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "8529d539a870776c15b95ad47e6b91d5c67a7c9f",
-      "feature/1-error-handling": "304ffbcd4620bfe1b707d4d6e817052d27f5038c",
-      "feature/15-cam-status-report": "37e076ebd9ed701466fe7b8c8c42014e49b24749",
-      "feature/16-analysis-result-receive": "e0db1358916a50a937fca340245e05ae7a7fc72d",
-      "feature/17-recording-register": "0aac3a1e9c288c51f1bb6d364fdf93e8052dc503",
+      "dev": "5a998b28cc9800b3003bde54992f1c169b5847b0",
+      "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
+      "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
+      "feature/16-analysis-result-receive": "6ef49f2ea099b9b2d0dcdcfde11b7e305b4fad45",
+      "feature/17-recording-register": "6312af117c1703ed811a954433158e3994e8f4ad",
       "feature/2-password-encoder": "631cec01c679f87ed73d40148e568877f971aa28",
-      "feature/7-load-regions": "8c2bdee8afd2bcb4fe27b747ac10e7ea159ec4b8",
-      "main": "b04192c5f0170c64d53e63ed457cb14ac3a52e1b"
+      "feature/7-load-regions": "865a63ee4c607265e86987babc11d5a69efddd03",
+      "main": "b04192c5f0170c64d53e63ed457cb14ac3a52e1b",
+      "feature/19-congestion-level": "934f8ece3178f331a032f9d4ce50695f72708c79",
+      "chore/pr-template-fnc-id": "ec2e2afd35eb04bd649a52c23f20c65a142154bd",
+      "feature/29-check-login-id": "99eb578dcdf59fbaae42c2afb0006904f1d2b974",
+      "feature/6-work-history": "d5c075aa9af41e0e36394c9c468a8d735e79d78b",
+      "feature/30-signup": "1caccdb41db3dce1208f02ddfcf69cd8fc46baae",
+      "feature/5-super-admin-init": "ceb37b38367fd4aa2acc7b304500ac6d103a368c",
+      "chore/fnc-id-level": "24b399ff3b0356398947bb786f6063f25557138a",
+      "feature/9-zone-preview": "0f307f4a4468ab0a13da4781ce2085e64b82601e",
+      "feature/10-zone-register": "6c720a134d4d8f319d03421f378ffcf353d180c1",
+      "feature/11-camera-register": "0b9be5c1f0ca2f2a65335487ec3a505ff8eb45d8",
+      "docs/troubleshooting-records": "2f99b365e29d5a1eaa7cce10ad75f6301f2812d8",
+      "feature/12-camera-list": "118ee699bda431b101f02e8d9113e685be02c4b0",
+      "feature/20-congestion-map": "7aae0d1451b9367ee28b40c96c3356a74ad8d978",
+      "feature/13-camera-start": "1f0cb2af432bcac1a3155f8ab18ab287b089fe82",
+      "feature/3-login": "967566c4300c2ff406445214ff1c9233693ede46",
+      "feature/14-camera-stop": "1b8b1b09b2eca4effdecdaa7cae48fe8e8096e19",
+      "feature/18-minute-stat-save": "90949ccd425d5253bcf778e7a8b5d2f8bd1a2223",
+      "feature/21-dashboard-summary": "48c9230a0bad04ee6cf0f7166f21ee0c04db2b64"
     }
   }
 }
