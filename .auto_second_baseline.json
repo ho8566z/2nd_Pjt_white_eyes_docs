@@ -5,7 +5,7 @@
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "329e9a6b4a84920c4322730af08bc78a6c15103c",
+      "main": "185695e1d5a50a5737bd43385884f2020b3093a8",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
@@ -17,10 +17,15 @@
       "docs/backlog-login-fail-session": "0f647a4251d1e19c80c28fbb63ac0ee63dfabfab",
       "docs/camera-create-history-detail": "a02fc4147a0a7afeaafae06513eeff929cd608dc",
       "docs/dedupe-off-measurements": "b7e6a8b3440d570afc399fd01f9cf1f7ffe31f74",
-      "docs/s-010-and-camera-stopping": "7f3b5d8a9f3cf59bb4d1aca8fe39069bc09f94fa"
+      "docs/s-010-and-camera-stopping": "7f3b5d8a9f3cf59bb4d1aca8fe39069bc09f94fa",
+      "docs/41-recording-retry": "0ab508015338c9eb5fcd754bdce5d9876a52b6e0",
+      "docs/camera-stopping-409": "62ff30c3d0276f534bc21ae5a39d47353ddf572e",
+      "docs/ground-truth-comparison": "43d9d064dc1ad0ed9d377cb29c9902806d9ef43b",
+      "docs/internal-base-url-admin-path": "f8ff3e7b1e6b07e8ea986bfed828dc24e7235985",
+      "docs/s-006-retry-rules": "967be36d9f20bd0fc790c3ed8d3d19032d35a884"
     },
     "white-eyes-flask": {
-      "dev": "91f0d64c6d23a7cd9d57623a50394113d36d8ac3",
+      "dev": "ef787c4d868a46038cfe02e3fd58fad90e260f2e",
       "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
       "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
       "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
@@ -32,14 +37,16 @@
       "feature/6-dummy-prepare": "3bb2c847aa83d9744ccc55560e25f4fa3cd03974",
       "feature/7-dummy-playback": "c41518f474648126e7e6db163a94da3b24e3abf0",
       "feature/3-visdrone-pointtracker": "d05c8f1ea6510c85efe71837fb143e8b92505f97",
-      "feature/8-result-send": "9b15c67da7109717745558d373180bf2700d39a5",
+      "feature/8-result-send": "df6d98c08364b6e401644c4f5a17f0b381623362",
       "chore/ci-on-push": "04b4d34bc0c8b42f0c80da17c9634a5bc8309fc0",
       "chore/feature-id-comments": "31b51f7ac6c28964188d32e0560ff6a9d893337b",
-      "chore/handover-rule": "bccd26c595dbb3b389bde9eff20f244b53f69db3"
+      "chore/handover-rule": "bccd26c595dbb3b389bde9eff20f244b53f69db3",
+      "feature/39-admin-internal-base-url": "e0f0768004d8cf677e020665d16f0a56169a5403",
+      "feature/41-recording-retry-rules": "ae4a432719a5f0de78d81447aadf3dc1b3beeaab"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "13c91700efd63d97ab02e1b803354bc288dffa18",
+      "dev": "7340aba481db3487ed5d4acf54e9b6620d45e9eb",
       "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
       "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
       "feature/16-analysis-result-receive": "672d089d8703319ef0f0c91723f590d831d62ab4",
@@ -51,7 +58,7 @@
       "chore/pr-template-fnc-id": "ec2e2afd35eb04bd649a52c23f20c65a142154bd",
       "feature/29-check-login-id": "603e7678cd8fd6a8dc8e638525f028ccc0c56b89",
       "feature/6-work-history": "ef3559fc0dfd64b1e11285affbfbf58db86bc1d3",
-      "feature/30-signup": "1caccdb41db3dce1208f02ddfcf69cd8fc46baae",
+      "feature/30-signup": "39a817f0c4fb4c83d8cc38674ad702295879fb1f",
       "feature/5-super-admin-init": "ceb37b38367fd4aa2acc7b304500ac6d103a368c",
       "chore/fnc-id-level": "24b399ff3b0356398947bb786f6063f25557138a",
       "feature/9-zone-preview": "0f307f4a4468ab0a13da4781ce2085e64b82601e",
@@ -66,16 +73,20 @@
       "feature/18-minute-stat-save": "34a06e304df05f870d5c69a0db652cf1b2cd3b9c",
       "feature/21-dashboard-summary": "48c9230a0bad04ee6cf0f7166f21ee0c04db2b64",
       "30-fnc-u-002-회원가입": "6eb937e679c4d6096647416b4c4aea956df3d198",
-      "31-fnc-u-003-승인-대기-안내": "d24af057f130309d10d8971a49b4aa63a8e39360",
+      "31-fnc-u-003-승인-대기-안내": "35bb3f75235fb1b97cd7dc3935ec63c5b67baba2",
       "32-fnc-a-002-사용자-목록": "76f058581219b35b4bf87835af05b62fb1aceb31",
       "chore/ci-on-push": "0ab8264cfc51362aed42e3afe09c29eb34dfa31b",
       "chore/handover-rule": "488a5ca44edba8aabe10559f85185929f6b6945e",
       "chore/migration-versioning": "afbc4d4b89666bb41c2b5cbc56b6a76ecd83d812",
       "feature/120-work-history-link": "41b9a8b2066bfeab22579ea872c1d91082fa82f6",
-      "feature/125-camera-list-stat": "b565f865f527ae4151efe22bd2d02db864d11954",
-      "feature/32-user-list": "5acc018309664f1984339521a135e3c0332f19e5",
-      "feature/4-access-control": "86f8d770bb9b434556015eb043fdb1009302fd9c",
-      "feature/8-region-zone-list": "64a945c374126d28e442c3aacae9cb99b69f2902"
+      "feature/125-camera-list-stat": "2b99d25dcb4ccc5c897b9f5b618e555c99719e7d",
+      "feature/32-user-list": "8192e3a1e9fc77b1befa1896bf7fd1b751990495",
+      "feature/4-access-control": "d8a9f98a63c47dd5a0d0ffd34d2a687b303032f4",
+      "feature/8-region-zone-list": "64a945c374126d28e442c3aacae9cb99b69f2902",
+      "feature/131-camera-stopping": "041f8d36d5367fbe6b5b1b4cbf803db192b2a536",
+      "feature/15-cam-status-receive": "8da6123c82252ffa3f1a048b944648640ff029f1",
+      "feature/20-congestion-map-status": "7cf7e3252337f49216d56d230a2e100df99418d7",
+      "feature/21-dashboard-summary-status": "0b6475db32ef36efde67d4b72c8eaced8acf52b0"
     }
   }
 }
