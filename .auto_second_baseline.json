@@ -1,11 +1,11 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "185695e1d5a50a5737bd43385884f2020b3093a8",
+      "main": "46a322605664c0e0b7bef8dbc37b9aee11a42b64",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
@@ -46,7 +46,7 @@
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "7340aba481db3487ed5d4acf54e9b6620d45e9eb",
+      "dev": "64c19fdb1c6f4de4f969b2f2e10cd5473afdc33d",
       "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
       "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
       "feature/16-analysis-result-receive": "672d089d8703319ef0f0c91723f590d831d62ab4",
@@ -80,7 +80,7 @@
       "chore/migration-versioning": "afbc4d4b89666bb41c2b5cbc56b6a76ecd83d812",
       "feature/120-work-history-link": "41b9a8b2066bfeab22579ea872c1d91082fa82f6",
       "feature/125-camera-list-stat": "2b99d25dcb4ccc5c897b9f5b618e555c99719e7d",
-      "feature/32-user-list": "8192e3a1e9fc77b1befa1896bf7fd1b751990495",
+      "feature/32-user-list": "35e0b4fd05435daf5d385f63d2d9e9ea1e0c2f49",
       "feature/4-access-control": "d8a9f98a63c47dd5a0d0ffd34d2a687b303032f4",
       "feature/8-region-zone-list": "64a945c374126d28e442c3aacae9cb99b69f2902",
       "feature/131-camera-stopping": "041f8d36d5367fbe6b5b1b4cbf803db192b2a536",
