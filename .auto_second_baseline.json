@@ -1,11 +1,11 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "2541231a06d3008be88f3ad24f5fc03ba7880f9d",
+      "main": "70a809ca07ea85ed20c94d0e33cea923ba395656",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
@@ -13,7 +13,7 @@
       "docs/fnc-id-in-code": "2743c0480bb8b81af154bf03a11edf6194f9822a",
       "docs/package-structure-user-js": "1a2236d9f44481b3a9680173ce7e8164b05a292a",
       "docs/camera-register-zone-not-found": "07ab8618234bf02c41d5f55a7e0e7f54547048b0",
-      "docs/visdrone-pointtracker": "d537f8f33f98b4130fcec4c8a718a41c8f0c3e4e"
+      "docs/visdrone-pointtracker": "5f19d45ab41d2d6158bcd9b220af37e833ee2255"
     },
     "white-eyes-flask": {
       "dev": "6cf14f305abcf0c5fb9a4012e0efa9918c460bb0",
@@ -25,10 +25,10 @@
       "chore/pr-template-fnc-id": "dec913503f6b67917257bf5fad875ec8e62c94fe",
       "feature/5-dwell-time": "f2886a9a4e4788d079e627bc0e52f38a50b0d0bd",
       "feature/3-person-detect": "aa6a28c86c7cc7473f1e5df4816a254640a7f85e",
-      "feature/6-dummy-prepare": "fde6951f4d4a12e456cd22a1dc54e6b08bfb9ae0",
-      "feature/7-dummy-playback": "5a6c2689292448bc93b06d1c0f8ec63cade21a88",
-      "feature/3-visdrone-pointtracker": "42746542c589738926faf9e7ff8447d4e10cf85d",
-      "feature/8-result-send": "7456f94f2bb57c8ffabe3101e659d5d22ae34bdf"
+      "feature/6-dummy-prepare": "3bb2c847aa83d9744ccc55560e25f4fa3cd03974",
+      "feature/7-dummy-playback": "c41518f474648126e7e6db163a94da3b24e3abf0",
+      "feature/3-visdrone-pointtracker": "d05c8f1ea6510c85efe71837fb143e8b92505f97",
+      "feature/8-result-send": "909b7d29aabcdfb0f2f0a0619169e999b477b54e"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
