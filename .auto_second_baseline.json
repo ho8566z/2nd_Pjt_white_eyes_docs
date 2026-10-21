@@ -16,7 +16,7 @@
       "docs/visdrone-pointtracker": "5f19d45ab41d2d6158bcd9b220af37e833ee2255"
     },
     "white-eyes-flask": {
-      "dev": "6cf14f305abcf0c5fb9a4012e0efa9918c460bb0",
+      "dev": "749c86d991091b0b057d1ea1dba72aebc04422f3",
       "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
       "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
       "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
