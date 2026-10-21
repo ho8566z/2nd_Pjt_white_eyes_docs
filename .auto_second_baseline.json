@@ -5,7 +5,7 @@
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "70a809ca07ea85ed20c94d0e33cea923ba395656",
+      "main": "329e9a6b4a84920c4322730af08bc78a6c15103c",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
@@ -13,10 +13,14 @@
       "docs/fnc-id-in-code": "2743c0480bb8b81af154bf03a11edf6194f9822a",
       "docs/package-structure-user-js": "1a2236d9f44481b3a9680173ce7e8164b05a292a",
       "docs/camera-register-zone-not-found": "07ab8618234bf02c41d5f55a7e0e7f54547048b0",
-      "docs/visdrone-pointtracker": "5f19d45ab41d2d6158bcd9b220af37e833ee2255"
+      "docs/visdrone-pointtracker": "5f19d45ab41d2d6158bcd9b220af37e833ee2255",
+      "docs/backlog-login-fail-session": "0f647a4251d1e19c80c28fbb63ac0ee63dfabfab",
+      "docs/camera-create-history-detail": "a02fc4147a0a7afeaafae06513eeff929cd608dc",
+      "docs/dedupe-off-measurements": "b7e6a8b3440d570afc399fd01f9cf1f7ffe31f74",
+      "docs/s-010-and-camera-stopping": "7f3b5d8a9f3cf59bb4d1aca8fe39069bc09f94fa"
     },
     "white-eyes-flask": {
-      "dev": "749c86d991091b0b057d1ea1dba72aebc04422f3",
+      "dev": "91f0d64c6d23a7cd9d57623a50394113d36d8ac3",
       "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
       "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
       "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
@@ -28,7 +32,10 @@
       "feature/6-dummy-prepare": "3bb2c847aa83d9744ccc55560e25f4fa3cd03974",
       "feature/7-dummy-playback": "c41518f474648126e7e6db163a94da3b24e3abf0",
       "feature/3-visdrone-pointtracker": "d05c8f1ea6510c85efe71837fb143e8b92505f97",
-      "feature/8-result-send": "909b7d29aabcdfb0f2f0a0619169e999b477b54e"
+      "feature/8-result-send": "9b15c67da7109717745558d373180bf2700d39a5",
+      "chore/ci-on-push": "04b4d34bc0c8b42f0c80da17c9634a5bc8309fc0",
+      "chore/feature-id-comments": "31b51f7ac6c28964188d32e0560ff6a9d893337b",
+      "chore/handover-rule": "bccd26c595dbb3b389bde9eff20f244b53f69db3"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
@@ -57,7 +64,18 @@
       "feature/3-login": "bd2bc41081b0706e4e49fe8634e54cc54aa89bd9",
       "feature/14-camera-stop": "6cd4799676d9853a132b9bf787041664a053b912",
       "feature/18-minute-stat-save": "34a06e304df05f870d5c69a0db652cf1b2cd3b9c",
-      "feature/21-dashboard-summary": "48c9230a0bad04ee6cf0f7166f21ee0c04db2b64"
+      "feature/21-dashboard-summary": "48c9230a0bad04ee6cf0f7166f21ee0c04db2b64",
+      "30-fnc-u-002-회원가입": "6eb937e679c4d6096647416b4c4aea956df3d198",
+      "31-fnc-u-003-승인-대기-안내": "d24af057f130309d10d8971a49b4aa63a8e39360",
+      "32-fnc-a-002-사용자-목록": "76f058581219b35b4bf87835af05b62fb1aceb31",
+      "chore/ci-on-push": "0ab8264cfc51362aed42e3afe09c29eb34dfa31b",
+      "chore/handover-rule": "488a5ca44edba8aabe10559f85185929f6b6945e",
+      "chore/migration-versioning": "afbc4d4b89666bb41c2b5cbc56b6a76ecd83d812",
+      "feature/120-work-history-link": "41b9a8b2066bfeab22579ea872c1d91082fa82f6",
+      "feature/125-camera-list-stat": "b565f865f527ae4151efe22bd2d02db864d11954",
+      "feature/32-user-list": "5acc018309664f1984339521a135e3c0332f19e5",
+      "feature/4-access-control": "86f8d770bb9b434556015eb043fdb1009302fd9c",
+      "feature/8-region-zone-list": "64a945c374126d28e442c3aacae9cb99b69f2902"
     }
   }
 }
