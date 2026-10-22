@@ -59,7 +59,7 @@
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "64c19fdb1c6f4de4f969b2f2e10cd5473afdc33d",
+      "dev": "012a6a0422571a72f9d1c8c9160bb39a8dccef65",
       "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
       "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
       "feature/16-analysis-result-receive": "672d089d8703319ef0f0c91723f590d831d62ab4",
