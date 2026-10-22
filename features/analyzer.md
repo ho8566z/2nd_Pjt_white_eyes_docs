@@ -169,13 +169,13 @@
 - **사전 조건**: 라이브 작업 실행 중
 - **입력 항목**: 원본 프레임, 프레임별 박스
 - **처리 순서**
-  1. 녹화용 ffmpeg 프로세스에 프레임을 파이프로 넘김: RECORD_WIDTH×RECORD_HEIGHT, RECORD_FPS로 변환, libx264, -f segment -segment_time 60 -segment_atclocktime 1 -reset_timestamps 1 -segment_format_options movflags=+faststart, 파일은 /var/lib/analyzer/tmp/ 에. 추가 옵션: -use_wallclock_as_timestamps 1(들어온 시각대로 시간을 매겨 분석이 느려도 영상 길이가 어긋나지 않게), -g RECORD_FPS(1초마다 키프레임: 분 경계를 1초 안팎으로 자르고 구간 이동을 빠르게), -preset veryfast(CPU만 쓰는 서버), -segment_list <목록>.csv(닫힌 파일을 알려 줌). 파일 이름은 순번으로 받고 공유 폴더로 옮길 때 아래 이름 규칙으로 바꿈
+  1. 녹화용 ffmpeg 프로세스에 프레임을 파이프로 넘김: RECORD_WIDTH×RECORD_HEIGHT, RECORD_FPS로 변환, libx264, -f segment -segment_time 60 -segment_atclocktime 1 -reset_timestamps 1 -segment_format_options movflags=+faststart, 파일은 /var/lib/analyzer/tmp/ 에
   2. 분석 프레임마다 좌표 [t, 박스 목록]을 지금 분 파일용 목록에 추가(t = 그 분 파일 시작부터의 초)
   3. 분이 바뀌면(파일 완성) 좌표 목록을 .json.gz로 저장
   4. 영상·좌표 파일을 공유 폴더 recordings/live/cam{id}/{yyyyMMdd}/ 로 옮김(같은 이름, 확장자만 다름)
   5. POST /internal/v1/recordings {cameraId, startedAt, endedAt, videoPath, boxPath}
   6. 등록 실패: 1분 간격 재시도(최대 10번), 계속 실패하면 로그(파일은 남음)
-- **업무 규칙/검증**: 파일 이름 시각 = 그 분의 시작(cam{id}_{yyyyMMdd_HHmm}). 첫 파일은 가동 시각부터 다음 분까지라 1분보다 짧음. 같은 분에 캠을 다시 시작해 이름이 겹치면 기존 파일을 덮지 않고 _2, _3을 붙임. 좌표 파일 형식은 설정·규약 시트
+- **업무 규칙/검증**: 파일 이름 시각 = 그 분의 시작(cam{id}_{yyyyMMdd_HHmm}). 첫 파일은 가동 시각부터 다음 분까지라 1분보다 짧음. 좌표 파일 형식은 설정·규약 시트
 - **정상 결과**: 공유 폴더에 1분 파일 2개, recording 1행
 - **예외 상황 및 처리**: 공유 폴더 쓰기 실패: 로컬에 남기고 다음 분에 다시 옮김
 - **후속 동작**: -
@@ -247,7 +247,7 @@
   3. 초당 최대 ANALYZE_FPS번: 최신 프레임에 박스(초록 사각형)·인원수 글자를 그려 JPEG(품질 70, 가로 960px)로 보냄
   4. 시청자 수를 세어, 0명이면 프레임 그리기·JPEG 변환을 멈춤
   [스냅샷 /snapshot]
-  5. 캠 작업이 없으면 404
+  5. 캠 작업이 없으면 404. 작업은 있으나 첫 프레임이 아직 없으면 503(FRAME_NOT_READY, Retry-After: 1)
   6. 최신 프레임에 박스·인원수를 그려 JPEG(품질 60, 가로 320px) 1장 응답, Cache-Control: no-store
   7. 같은 캠의 스냅샷은 1초 동안 재사용(여러 관리자·카드가 동시에 요청해도 한 번만 변환)
 - **업무 규칙/검증**: 분석과 별개로 그리기만 함(분석 속도에 영향 최소화). 스냅샷은 요청이 있을 때만 만듦(보는 사람이 없으면 부하 없음)
@@ -269,11 +269,11 @@
 - **입력 항목**: -
 - **처리 순서**
   1. GET /internal/v1/cameras/desired
-  2. 목록의 캠마다 FNC-S-001과 같은 방식으로 시작하고 상태 보고(RUNNING 또는 PREPARING)
+  2. 목록의 캠마다 FNC-S-001과 같은 방식으로 시작하고 상태 보고(RUNNING 또는 PREPARING). 보고는 보내는 때의 캠 상태를 보냄
   3. 관리자 앱 연결 실패: 10초 간격으로 계속 재시도
-- **업무 규칙/검증**: 관리자 앱이 정지한 캠은 목록에 없음
+- **업무 규칙/검증**: 관리자 앱이 정지한 캠은 목록에 없음. 이미 가동 중인 캠은 다시 시작하지 않음(현재 상태만 보고)
 - **정상 결과**: 캠 작업 복구
-- **예외 상황 및 처리**: -
+- **예외 상황 및 처리**: 한 캠이 실패해도 다음 캠을 계속 처리함. 정지가 끝나지 않은 캠(CAMERA_STOPPING)은 10초 간격으로 다시 시작을 시도함. 상태 보고가 연결 실패·5xx 등으로 실패하면 10초 간격으로 다시 보내되, 다시 보내기 전에 그 캠 작업이 없어졌으면(관리자가 정지) 버리고, 관리자 앱이 400·404로 거절하면 한 번 로그를 남기고 버림. DUMMY 영상 파일이 없거나(SOURCE_NOT_FOUND) LIVE를 아직 시작할 수 없으면(2단계 구현 전, SOURCE_TYPE_NOT_SUPPORTED) 시작하지 않고 ERROR로 보고함(errorMessage '영상 파일을 찾을 수 없음' / '지원하지 않는 영상 종류')
 - **후속 동작**: -
 - **관련 요구사항 ID**: vanly-008
 - **완료/검수 기준**: 가동 중 분석 서버 재시작 → 같은 캠이 다시 RUNNING

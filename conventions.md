@@ -106,6 +106,7 @@
 | STAT_MINUTE_RETENTION_DAYS | 90 | 1분 통계 보관(stagg-004) |
 | RECORDING_RETENTION_DAYS | 30 | 녹화 기록 보관(rec-002). 파일은 스토리지 서버가 31일에 삭제 |
 | RESULT_RETRY_BUFFER_SEC | 300 | 분석 서버의 전송 실패 결과 보관 한도(vanly-006) |
+| LOG_LEVEL | 관리자·사용자 앱 local·dev DEBUG, prod INFO / 분석 서버 INFO | 로그 레벨(code-conventions 7장). Spring은 `com.whiteeyes` 패키지에만 적용하고 그 밖의 라이브러리는 WARN. 분석 서버는 루트 로거 전체에 적용하며 값이 없거나 알 수 없는 이름이면 INFO |
 | ANALYZE_FPS | 5 | 분석 프레임 수(초당). 입력 960은 이 PC에서 초당 2장 정도라 서버에서 느리면 낮춘다(0015) |
 | DETECTOR | visdrone | 탐지 모델: visdrone(VisDrone YOLOv8m) \| yolo-crowd(0001). 알 수 없는 값이면 시작할 때 오류 |
 | DETECT_CONF / DETECT_IMGSZ / YOLO_WEIGHTS | 0.3 / 960 / visdrone-yolov8m.pt | 탐지 신뢰도 하한·입력 크기·가중치 파일(DETECTOR에 맞는 파일). VisDrone 사진 120장 측정(0015): 입력 960에서 센 수는 실제의 약 65%, 상관계수 0.93(640: 약 47%, 0.87). 960은 이 PC에서 프레임당 약 0.5초라 ANALYZE_FPS 5를 못 맞춤 — 서버에서 느리면 조정 |
@@ -113,7 +114,6 @@
 | MEDIA_ROOT | /srv/media | 분석 서버가 공유 폴더를 읽는 기준 경로. DUMMY 영상은 이 아래 dummy/videos/ 에 있음(FNC-S-001 파일 존재 확인). 경로가 이 폴더 밖(링크 포함)을 가리키면 SOURCE_NOT_FOUND |
 | EDGE_MARGIN_RATIO | 0.05 | 판정선 위치: 화면 각 변에서 안쪽으로 너비·높이의 5% |
 | RECORD_WIDTH / RECORD_HEIGHT / RECORD_FPS | 1280 / 720 / 10 | 라이브 녹화 해상도·프레임(rec-002 용량 조절) |
-| RECORD_TMP_DIR / FFMPEG_BIN | /var/lib/analyzer/tmp / ffmpeg | 녹화 중인 파일을 두는 분석 서버 로컬 폴더(공유 폴더가 아님)와 녹화에 쓰는 ffmpeg 실행 파일(FNC-S-008) |
 | LIVE_RECONNECT_FAIL_SEC | 30 | 라이브 스트림이 이 시간 동안 다시 연결되지 않으면 ERROR 보고(vanly-007) |
 | CARD_SNAPSHOT_INTERVAL_SEC | 2 | 관리자 대시보드 캠 카드 미리보기 갱신 간격(live-002). 관리자 앱이 화면에 전달 |
 | COMPARE_ABNORMAL_PCT | 30 | 기간 비교의 비정상 변동 기본 기준(cmp-003, 화면에서 조절) |
