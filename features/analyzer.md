@@ -169,13 +169,13 @@
 - **사전 조건**: 라이브 작업 실행 중
 - **입력 항목**: 원본 프레임, 프레임별 박스
 - **처리 순서**
-  1. 녹화용 ffmpeg 프로세스에 프레임을 파이프로 넘김: RECORD_WIDTH×RECORD_HEIGHT, RECORD_FPS로 변환, libx264, -f segment -segment_time 60 -segment_atclocktime 1 -reset_timestamps 1 -segment_format_options movflags=+faststart, 파일은 /var/lib/analyzer/tmp/ 에
+  1. 녹화용 ffmpeg 프로세스에 프레임을 파이프로 넘김: RECORD_WIDTH×RECORD_HEIGHT, RECORD_FPS로 변환, libx264, -f segment -segment_time 60 -segment_atclocktime 1 -reset_timestamps 1 -segment_format_options movflags=+faststart, 파일은 /var/lib/analyzer/tmp/ 에. 추가 옵션: -use_wallclock_as_timestamps 1(들어온 시각대로 시간을 매겨 분석이 느려도 영상 길이가 어긋나지 않게), -g RECORD_FPS(1초마다 키프레임: 분 경계를 1초 안팎으로 자르고 구간 이동을 빠르게), -preset veryfast(CPU만 쓰는 서버), -segment_list <목록>.csv(닫힌 파일을 알려 줌). 파일 이름은 순번으로 받고 공유 폴더로 옮길 때 아래 이름 규칙으로 바꿈
   2. 분석 프레임마다 좌표 [t, 박스 목록]을 지금 분 파일용 목록에 추가(t = 그 분 파일 시작부터의 초)
   3. 분이 바뀌면(파일 완성) 좌표 목록을 .json.gz로 저장
   4. 영상·좌표 파일을 공유 폴더 recordings/live/cam{id}/{yyyyMMdd}/ 로 옮김(같은 이름, 확장자만 다름)
   5. POST /internal/v1/recordings {cameraId, startedAt, endedAt, videoPath, boxPath}
   6. 등록 실패: 1분 간격 재시도(최대 10번), 계속 실패하면 로그(파일은 남음)
-- **업무 규칙/검증**: 파일 이름 시각 = 그 분의 시작(cam{id}_{yyyyMMdd_HHmm}). 첫 파일은 가동 시각부터 다음 분까지라 1분보다 짧음. 좌표 파일 형식은 설정·규약 시트
+- **업무 규칙/검증**: 파일 이름 시각 = 그 분의 시작(cam{id}_{yyyyMMdd_HHmm}). 첫 파일은 가동 시각부터 다음 분까지라 1분보다 짧음. 같은 분에 캠을 다시 시작해 이름이 겹치면 기존 파일을 덮지 않고 _2, _3을 붙임. 좌표 파일 형식은 설정·규약 시트
 - **정상 결과**: 공유 폴더에 1분 파일 2개, recording 1행
 - **예외 상황 및 처리**: 공유 폴더 쓰기 실패: 로컬에 남기고 다음 분에 다시 옮김
 - **후속 동작**: -
@@ -247,7 +247,7 @@
   3. 초당 최대 ANALYZE_FPS번: 최신 프레임에 박스(초록 사각형)·인원수 글자를 그려 JPEG(품질 70, 가로 960px)로 보냄
   4. 시청자 수를 세어, 0명이면 프레임 그리기·JPEG 변환을 멈춤
   [스냅샷 /snapshot]
-  5. 캠 작업이 없으면 404. 작업은 있으나 첫 프레임이 아직 없으면 503(FRAME_NOT_READY, Retry-After: 1)
+  5. 캠 작업이 없으면 404
   6. 최신 프레임에 박스·인원수를 그려 JPEG(품질 60, 가로 320px) 1장 응답, Cache-Control: no-store
   7. 같은 캠의 스냅샷은 1초 동안 재사용(여러 관리자·카드가 동시에 요청해도 한 번만 변환)
 - **업무 규칙/검증**: 분석과 별개로 그리기만 함(분석 속도에 영향 최소화). 스냅샷은 요청이 있을 때만 만듦(보는 사람이 없으면 부하 없음)
