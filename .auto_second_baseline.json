@@ -27,7 +27,8 @@
       "docs/region-density-rule": "9453f83fa87a255b23f8c29014f02345b12b06c1",
       "docs/screens-design-feedback": "711b17807f8281a5ac04e37e61d1d377f28d1ab8",
       "docs/stage1-local-test-report": "58295b7b6ec9f62ac20090f11fbee77d08c426b0",
-      "docs/stage1-screens-report": "d22dbbd5c36ee741b1bba83b5225ac8788a9720a"
+      "docs/stage1-screens-report": "d22dbbd5c36ee741b1bba83b5225ac8788a9720a",
+      "docs/log-level-setting": "1c34a8ed8348ebd95267b3ca7f76c71cd840a24b"
     },
     "white-eyes-flask": {
       "dev": "ef787c4d868a46038cfe02e3fd58fad90e260f2e",
@@ -47,7 +48,8 @@
       "chore/feature-id-comments": "31b51f7ac6c28964188d32e0560ff6a9d893337b",
       "chore/handover-rule": "bccd26c595dbb3b389bde9eff20f244b53f69db3",
       "feature/39-admin-internal-base-url": "e0f0768004d8cf677e020665d16f0a56169a5403",
-      "feature/41-recording-retry-rules": "ae4a432719a5f0de78d81447aadf3dc1b3beeaab"
+      "feature/41-recording-retry-rules": "ae4a432719a5f0de78d81447aadf3dc1b3beeaab",
+      "feature/44-logging-config": "1c2a422c5efb2aa62e50ba924fbe1bca8791af5e"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
