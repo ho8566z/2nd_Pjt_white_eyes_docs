@@ -5,7 +5,7 @@
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "46a322605664c0e0b7bef8dbc37b9aee11a42b64",
+      "main": "1ac6d4738d67cad70c3b97b8b36796926d8a2575",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
@@ -28,10 +28,13 @@
       "docs/screens-design-feedback": "711b17807f8281a5ac04e37e61d1d377f28d1ab8",
       "docs/stage1-local-test-report": "58295b7b6ec9f62ac20090f11fbee77d08c426b0",
       "docs/stage1-screens-report": "d22dbbd5c36ee741b1bba83b5225ac8788a9720a",
-      "docs/log-level-setting": "1c34a8ed8348ebd95267b3ca7f76c71cd840a24b"
+      "docs/log-level-setting": "1c34a8ed8348ebd95267b3ca7f76c71cd840a24b",
+      "docs/10-snapshot-503": "ce61217fa1bc62627e6bd11dbab3c9c2b998c7f0",
+      "docs/11-restart-recovery-rules": "fed20ffb69a48b32fefa2e6bf01d811e963bee67",
+      "docs/9-live-recording-options": "921694156ecc096caf638e2363d46e3d47753109"
     },
     "white-eyes-flask": {
-      "dev": "ef787c4d868a46038cfe02e3fd58fad90e260f2e",
+      "dev": "7d97fa37a1ecf0f28ad6fd3fc40295e1486cf8af",
       "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
       "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
       "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
@@ -49,7 +52,10 @@
       "chore/handover-rule": "bccd26c595dbb3b389bde9eff20f244b53f69db3",
       "feature/39-admin-internal-base-url": "e0f0768004d8cf677e020665d16f0a56169a5403",
       "feature/41-recording-retry-rules": "ae4a432719a5f0de78d81447aadf3dc1b3beeaab",
-      "feature/44-logging-config": "1c2a422c5efb2aa62e50ba924fbe1bca8791af5e"
+      "feature/44-logging-config": "1c2a422c5efb2aa62e50ba924fbe1bca8791af5e",
+      "feature/9-live-recording": "5ee933d93b323111dfd031a62121d3fe5b13e1a3",
+      "feature/10-mjpeg-snapshot": "b7104758b9de82b4467a2c4d78d1a77ca5d0864c",
+      "feature/11-restart-recovery": "8ff7b7ec0546d72ac9e54247ab854e93523475e7"
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
@@ -99,6 +105,9 @@
       "feature/137-zones-screen": "e556169fded3ea4e000784aa5a73eca034380031",
       "feature/138-cameras-screen": "55ff6646e173f95e0680943e4c62188252293867",
       "feature/139-dashboard-screen": "5d19cfd4b1c9c7128066d1bffb55320d35480738"
+    },
+    "white-eyes-assets": {
+      "main": "6d0f6e131e525eacfdea080d8cae492d6802dd1d"
     }
   }
 }
