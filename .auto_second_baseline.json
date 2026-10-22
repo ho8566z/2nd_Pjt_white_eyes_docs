@@ -22,7 +22,12 @@
       "docs/camera-stopping-409": "62ff30c3d0276f534bc21ae5a39d47353ddf572e",
       "docs/ground-truth-comparison": "43d9d064dc1ad0ed9d377cb29c9902806d9ef43b",
       "docs/internal-base-url-admin-path": "f8ff3e7b1e6b07e8ea986bfed828dc24e7235985",
-      "docs/s-006-retry-rules": "967be36d9f20bd0fc790c3ed8d3d19032d35a884"
+      "docs/s-006-retry-rules": "967be36d9f20bd0fc790c3ed8d3d19032d35a884",
+      "docs/design-screens": "b4010a4fa3dea8e8c5740d9034fe70b74398aa91",
+      "docs/region-density-rule": "9453f83fa87a255b23f8c29014f02345b12b06c1",
+      "docs/screens-design-feedback": "711b17807f8281a5ac04e37e61d1d377f28d1ab8",
+      "docs/stage1-local-test-report": "58295b7b6ec9f62ac20090f11fbee77d08c426b0",
+      "docs/stage1-screens-report": "d22dbbd5c36ee741b1bba83b5225ac8788a9720a"
     },
     "white-eyes-flask": {
       "dev": "ef787c4d868a46038cfe02e3fd58fad90e260f2e",
@@ -86,7 +91,12 @@
       "feature/131-camera-stopping": "041f8d36d5367fbe6b5b1b4cbf803db192b2a536",
       "feature/15-cam-status-receive": "8da6123c82252ffa3f1a048b944648640ff029f1",
       "feature/20-congestion-map-status": "7cf7e3252337f49216d56d230a2e100df99418d7",
-      "feature/21-dashboard-summary-status": "0b6475db32ef36efde67d4b72c8eaced8acf52b0"
+      "feature/21-dashboard-summary-status": "0b6475db32ef36efde67d4b72c8eaced8acf52b0",
+      "chore/screen-rule": "2c5a0fbe15839bfa00103f33d5e743c243aaa3a2",
+      "feature/136-common-layout": "37b827cbbb07bf41cfa5138dba6ef7215c41bb5c",
+      "feature/137-zones-screen": "e556169fded3ea4e000784aa5a73eca034380031",
+      "feature/138-cameras-screen": "55ff6646e173f95e0680943e4c62188252293867",
+      "feature/139-dashboard-screen": "5d19cfd4b1c9c7128066d1bffb55320d35480738"
     }
   }
 }
