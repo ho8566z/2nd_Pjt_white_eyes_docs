@@ -1,6 +1,6 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-10-22",
+  "updated": "2026-10-28",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
@@ -34,7 +34,7 @@
       "docs/9-live-recording-options": "921694156ecc096caf638e2363d46e3d47753109"
     },
     "white-eyes-flask": {
-      "dev": "0ad630cc0833828514bfe4de7f4c7978fa41940e",
+      "dev": "676ae15ff41426562359de3c1d8ed351ce8a4803",
       "feature/1-cam-start": "31a6b63fda597455f8e4d1df4588a2e70565930e",
       "feature/2-cam-stop": "27ebc9223b4b6f10385e31b423687e0457c208c8",
       "main": "fe7cbc042db8dd7fea844998dbd127fea16e6ef8",
@@ -59,7 +59,7 @@
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "6ce0c254470bfee17731f73a89fbd390a043d008",
+      "dev": "fdcab7640e384b153621e6f43cf8039166d4cb43",
       "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
       "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
       "feature/16-analysis-result-receive": "672d089d8703319ef0f0c91723f590d831d62ab4",
@@ -104,7 +104,23 @@
       "feature/136-common-layout": "37b827cbbb07bf41cfa5138dba6ef7215c41bb5c",
       "feature/137-zones-screen": "e556169fded3ea4e000784aa5a73eca034380031",
       "feature/138-cameras-screen": "55ff6646e173f95e0680943e4c62188252293867",
-      "feature/139-dashboard-screen": "5d19cfd4b1c9c7128066d1bffb55320d35480738"
+      "feature/139-dashboard-screen": "5d19cfd4b1c9c7128066d1bffb55320d35480738",
+      "feature/243-dashboard-deck-grip": "768a2a9fffbc1ecc6d402ab6ef5034279af9ff6a",
+      "feature/243-dashboard-grip-and-narrow": "d05ca66fe7162452c021dc622fbb2ac6f18101a0",
+      "feature/244-top-zones-count": "02bcfd7a1ff3092ee25d5ae4e3aa6452bda0ca57",
+      "feature/245-playback-box-sync": "2359bae2d7b29619bee925148b59da224cd9eada",
+      "feature/246-excel-region-sum-label": "14ab1a59b9d4c74f9065910f8f7dc0fb2ddae774",
+      "feature/249-pending-relogin-notice": "d83f376b5ae7c48af8f6124fa8d357b5e93b080c",
+      "feature/251-playback-event-link": "75e047dd2106de17c09599f23cc910a5ad50134c",
+      "feature/252-forbidden-screen-html": "a9d8d02d2495399304c7cd353b2c3583a77beb0b",
+      "feature/254-admin-root-redirect": "d7d1f2463015a779d4e99f53f2739265a11f9777",
+      "feature/257-event-detail-from-url": "7d5ab5dcd07765d25dcff7523a5f5e5e53701f74",
+      "feature/258-panel-open-legend-overlap": "a3c87062861c9ff396f4908164dfe93a65edb348",
+      "feature/259-user-zone-pin-popup": "c15ff0e256939952dc2b82bc5852ed2b7fc1d1e6",
+      "feature/260-playback-first-minute": "8d844d10092bee786be7f39420b6deb476f247d5",
+      "feature/271-zone-pin-region-path": "11f5209fd7cff3c3233357a5e30341a2b9b7de98",
+      "feature/272-zone-draw-ignore-click": "92c38622d222df0ae2f3953e061dffc106ef9044",
+      "feature/280-demo-generate-improve": "a9e75fe1091b907d45b013ae1450dd68167417f4"
     },
     "white-eyes-assets": {
       "main": "6d0f6e131e525eacfdea080d8cae492d6802dd1d"
