@@ -1,6 +1,6 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-10-28",
+  "updated": "2026-11-01",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
@@ -59,7 +59,7 @@
     },
     "white-eyes-spring": {
       "chore/compile-encoding-utf8": "05dd05e431630a0b86949b07b51daf5f1533234a",
-      "dev": "fdcab7640e384b153621e6f43cf8039166d4cb43",
+      "dev": "b8e8ae1f4e379a068ed2f14dd039307e2d5475ac",
       "feature/1-error-handling": "99a7c7452288f7ea98fa43467fccaeff823e16e9",
       "feature/15-cam-status-report": "e7db715cbfe14130d3578c264df0c4e2703d7e71",
       "feature/16-analysis-result-receive": "672d089d8703319ef0f0c91723f590d831d62ab4",
