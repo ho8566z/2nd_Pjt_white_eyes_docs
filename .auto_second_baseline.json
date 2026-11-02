@@ -1,11 +1,11 @@
 {
   "description": "auto_second 기준점: 팀 레포(white-eyes1)의 브랜치별로 마지막으로 내 레포에 반영한 커밋 해시",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "repos": {
     "white-eyes-docs": {
       "docs/decisions-0012-region-load": "0a6ad77fcb8b15733450241d34eb2bda69f2e360",
       "docs/s-001-start-spec": "46392d93477d3c0be631f2321ca73fce87f52d65",
-      "main": "1ac6d4738d67cad70c3b97b8b36796926d8a2575",
+      "main": "b4984d1a3dd857d06ec46a1c924cf87656e9b190",
       "docs/internal-path-is-api": "be6742c6d7183c93e08267858f0ab8a7cb221821",
       "docs/region-hierarchy": "6ac2dd8d169056ba39cb965dcbadee4b2137a537",
       "docs/s002-done-criteria": "c80d02b87cba1cbe72ab74e82016acf77fa2504c",
